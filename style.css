@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, #5d1e3d, #9c3942);
+}
+#Taha{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: darkviolet;
+}
+#Name{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+    color: #6c243e;
+}
+#logo{
+    height: 100%;
+    border-radius: 50%;
+}
+nav a{
+text-decoration: none;
+color: #fdb2e9c9;
+font-weight: bold;
+display: inline-block;
+width: 154%;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    /*background-color: #6c243e;*/
+    text-align: center;
+}
+nav{
+    width: 70%;
+    text-align: start;
+}
+nav a:hover{
+    background-color: darkviolet;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    
+    border-top: 2px solid rgb(255, 255, 255);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    animation-name: games;
+ animation-duration: 7s;
+ animation-iteration-count: infinite;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(140, 108, 139);
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 91%;
+    height: 79%;
+}
+#taha{
+    padding: 20px 0;
+    border-bottom: 5px solid rgb(128, 86, 211);
+}
+#ali{
+    float: right;
+    width: 70%;
+    height: 450px;
+    position: relative;
+}
+#Ta{
+    padding: 15px;
+    position: absolute;
+    width: 39%;
+    height: 226px;
+    background-color: #d085b3;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#Ta h1{
+    border-bottom: 4px solid #6c243e;
+    padding: 15px 0;   
+}
+#Ta p{
+    font-family: 'Katibeh', cursive;
+    font-family: 'Rakkas', cursive;
+    text-align: justify;
+    text-align: center;
+}
+#Call{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    
+}
+#Call img{
+    width: 45px;
+    border-bottom: 2px double rgb(33, 1, 33);
+    padding-bottom: 10px;
+    
+}
+#Call img:hover{
+    width: 55px;
+border-bottom: 2px solid red ;
+}
+@keyframes games{
+    0%{
+        background-color: rgb(151, 132, 172);
+    }
+    25%{
+        background-color: rgb(130, 77, 151);
+    }
+    50%{
+        background-color: rgb(53, 10, 63);
+    }
+  100%{
+        background-color: rgb(26, 3, 26);
+    }
+}
+
+@media only screen and (min-width:940px) and (max-width:1100px){
+#Taha{
+    width: 40%;
+}
+#ali{
+    width: 65%;
+}
+aside{
+    width: 35%;
+}
+}
+@media only screen and (max-width:940px) {
+    #Taha{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:801px){
+    header, main{
+        height: auto;
+    }
+    #Taha{
+        width: 100%;
+        text-align: center;
+    }
+    #Name,#logo{
+        float: none;
+    }
+   span a{
+       text-decoration: none;
+   }
+   nav{
+       width: 100%;
+       text-align: center;
+   }
+   aside{
+       width: 100%;
+   }
+   #ali{
+       height: 250px;
+       width: 100%;
+   }
+}
+@media only screen and (max-width:790px){
+    main{
+height: 400px;
+    }
+    aside{
+        height: 400px;
+        width: 35%;
+    }
+    #ali{
+        top:-330px;
+        right:-120px;
+    }
+  
+}
+@media only screen and (max-width:790px){
+    #logo{
+        width:50%;
+    }
+    #ali{
+        right: -19%;
+    }
+  aside{
+      width: 35%;
+  }
+ #Call img{
+     width: 90%;
+        padding-bottom: 30%;
+       
+ }
+     
+ 
+}
+@media only screen and (max-width:600px){
+
+    #Ta{
+      width: 39%;
+font-size:13px;
+    }
+      #logo{
+        width:50%;
+    }
+    #ali{
+        right: -24%;
+        }
+      nav li{
+         display:block;
+         width: 100%;
+         text-align: center;
+      }
+      aside{
+          width: 40%;
+      }
+    }     
+      @media print{
+        nav{
+              display: none;
+          }
+        } 
